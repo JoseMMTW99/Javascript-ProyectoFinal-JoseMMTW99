@@ -1,0 +1,20 @@
+
+$color1: white;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    div{
+        ul{
+            a{
+                color: $color1;
+            }
+        }
+    }
+}
+body{
+    color: $color1;
+}
