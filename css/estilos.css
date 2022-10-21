@@ -4,7 +4,7 @@ span {
 }
 
 .span-2 {
-  color: aqua;
+  color: #5ADBFF;
 }
 
 * {
@@ -16,19 +16,25 @@ span {
 
 body {
   color: white;
-  background-image: url(../img/0.fondooscuro.png);
+  background-color: #001f54;
 }
 
 main {
-  min-height: calc(100vh - 160px);
+  min-height: calc(100vh - 10em);
+}
+main .container-criptomonedas {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding-top: 1em;
 }
 
 footer {
-  height: 80px;
+  height: 5em;
 }
 
 nav {
-  height: 80px;
+  height: 5em;
   width: 100%;
 }
 nav .logo {
@@ -48,13 +54,14 @@ nav ul li a {
   color: white;
   font-size: 20px;
   padding: 7px 13px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
 }
 
-li a.active, li a:hover {
-  background: black;
-  color: aqua;
+li a:hover {
+  color: #5ADBFF;
   transition: 0.5s;
 }
 
@@ -82,7 +89,7 @@ li a.active, li a:hover {
     display: block;
   }
   ul {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.3);
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -101,7 +108,7 @@ li a.active, li a:hover {
     text-decoration: none;
   }
   li a:hover {
-    color: aqua;
+    color: #5ADBFF;
   }
   #check:checked ~ ul {
     left: 0;

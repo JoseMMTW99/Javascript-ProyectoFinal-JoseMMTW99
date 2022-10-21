@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 $color1: white;
-$color2: black;
+$color2: rgba(255,255,255,0.3);
 $color3: orange;
-$color4: aqua;
+$color4: #5ADBFF;
+
+$colorlogo1: #0077b6;
+$colorlogo2: #00b4d8;
+$colorlogo3: #90e0ef;
 
 span{
     color: $color3;
@@ -21,18 +25,24 @@ span{
 
 body{
     color: $color1;
-    background-image: url(../img/0.fondooscuro.png);
+    background-color: #001f54;
 }
 
 // Inicio Main
 main{
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 10em);
+    .container-criptomonedas{
+        background-color: $color2;
+        border: 3px solid rgba(255,255,255,0.2);
+        border-radius: 3px;
+        padding-top: 1em;
+    }
 }
 // Fin Main
 
 // Inicio Footer
 footer{
-    height: 80px;
+    height: 5em;
 }
 // Fin Footer
 
@@ -40,7 +50,7 @@ footer{
 
 //Inicio Menú Hamburguesa
 nav{
-    height: 80px;
+    height: 5em;
     width: 100%;
     .logo{
         height: 40px;
@@ -57,14 +67,15 @@ nav{
                 color: $color1;
                 font-size: 20px;
                 padding: 7px 13px;
+                border: 3px solid rgba(255,255,255,0.2);
                 border-radius: 3px;
+                background-color: $color2;
                 text-decoration: none;
             }
         }
     }
 }
-li a.active, li a:hover{
-    background: $color2;
+li a:hover{
     color: $color4;
     transition: .5s;
 }
@@ -116,4 +127,4 @@ li a.active, li a:hover{
         left: 0;
     }
 }
-//Fin Menú Hamburguesa
+//Fin Menú Hamburgues
