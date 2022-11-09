@@ -1,37 +1,32 @@
+//CREANDO UNA LISTA DE CRIPTOMONEDAS
 
 
-class Criptomonedas{
-    constructor(nombre,unidades){
-        this.nombre=nombre;
-        this.unidades=unidades;
+let cargar = document.getElementById("cargar");
+
+cargar.addEventListener("click",function(){
+
+    let criptomonedas = document.getElementById("criptomonedas");
+    let unidades = document.getElementById("unidades");
+    let inversion = document.getElementById("inversion");
+    let lista = document.getElementById("lista");
+
+    let li= document.createElement("li");
+    li.innerHTML = `<span>Critpmoneda: ${criptomonedas.value}; Unidades Totales: ${unidades.value}; Inversion Realizada: ${inversion.value}</span><button class="borrar">Borrar</Button>`;
+    lista.append(li);
+
+    let botones_borrar = document.querySelectorAll(".borrar");
+    console.log(botones_borrar);
+
+    for(let cargar of botones_borrar){
+        cargar.addEventListener("click", borrar_elemento);
     }
-    get_datos(){
-        console.log("<---Datos de la Criptomoneda--->");
-        console.log("Nombre:",this.nombre);
-        console.log("Unidades:",this.unidades);
-        console.log("");
-    }
-}
+});
 
+function borrar_elemento(e){
+    console.log(e); 
 
-//ARMADO DE LISTA DE CRIPTOMONEDAS DEL USUARIO
+    let hijo = e.target;
+    let padre = hijo.parentNode;
 
-let lista_criptomonedas = [];
-
-let i_cantidad=prompt("Ingrese cuantas tipos (no unidades) de criptomonedas usted posee o quiere cargar en su portfolio")
-
-for (let i=0; i<i_cantidad ; i++){
-    let nombre = prompt("Ingrese el nombre de la criptomoneda");
-    let unidades = prompt("Ingrese las unidades que posee de la misma");
-    let criptomonedas = new Criptomonedas (nombre,unidades);
-    lista_criptomonedas.push(criptomonedas);
-}
-
-console.log(lista_criptomonedas);
-console.log("");
-
-//SIMULO VISTA DE LISTA DE CRIPTOMONEDAS
-
-for (let criptomonedas of lista_criptomonedas){
-    criptomonedas.get_datos();
+    padre.remove();
 }
