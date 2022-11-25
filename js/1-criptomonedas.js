@@ -61,7 +61,7 @@ function cotizacion_criptomoneda(data){
     answer.classList.add("display-info");
     answer.innerHTML = `
     <p class="precio_criptomoneda">Precio: <span>${PRICE}</span></p>
-    <p>Marketcap: <span>${CIRCULATINGSUPPLYMKTCAP}</span></p>
+    <p class="total_marketcap">Marketcap: <span>${CIRCULATINGSUPPLYMKTCAP}</span></p>
     <p>Precio más alto del día:: <span>${HIGHDAY}</span></p>
     <p>Precio más bajo del día: <span>${LOWDAY}</span></p>
     <p>Variación últimas 24 horas: <span>${CHANGE24HOUR}</span></p>

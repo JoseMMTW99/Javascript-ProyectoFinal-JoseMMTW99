@@ -22,11 +22,24 @@ body {
 main {
   min-height: calc(100vh - 10em);
 }
-main .container-criptomonedas {
+main form {
   background-color: rgba(255, 255, 255, 0.3);
   border: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   padding-top: 1em;
+}
+main form select {
+  font-size: 1.25em;
+}
+main .container-answer {
+  padding-top: 1em;
+  margin-top: 1em;
+}
+main .container-answer .precio_criptomoneda {
+  font-size: 2em;
+}
+main .container-answer .total_marketcap {
+  font-size: 1.5em;
 }
 
 footer {
@@ -113,7 +126,4 @@ li a:hover {
   #check:checked ~ ul {
     left: 0;
   }
-}
-.precio_criptomoneda {
-  font-size: 40px;
 }/*# sourceMappingURL=estilos.css.map */

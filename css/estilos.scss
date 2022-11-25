@@ -31,11 +31,24 @@ body{
 // Inicio Main
 main{
     min-height: calc(100vh - 10em);
-    .container-criptomonedas{
+    form{
         background-color: $color2;
         border: 3px solid rgba(255,255,255,0.2);
         border-radius: 3px;
         padding-top: 1em;
+        select{
+            font-size: 1.25em;
+        }
+    }
+    .container-answer{
+        padding-top: 1em;
+        margin-top: 1em;
+        .precio_criptomoneda{
+            font-size: 2em;
+        }
+        .total_marketcap{
+            font-size: 1.5em;
+        }
     }
 }
 // Fin Main
@@ -128,7 +141,3 @@ li a:hover{
     }
 }
 //Fin Menú Hamburgues
-
-.precio_criptomoneda{
-    font-size: 40px;
-}
